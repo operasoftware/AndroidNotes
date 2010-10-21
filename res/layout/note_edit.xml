@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res/com.opera.link.android.notes"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	 	
+	<TextView
+		android:id="@+id/creation_date"
+		android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:gravity="right"
+	/> 			
+	<view 
+	    class="com.opera.link.android.notes.NoteEdit$LinedEditText"
+	    android:id="@+id/editor"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:background="@android:color/white"
+	    android:padding="5dip"
+	    android:scrollbars="vertical"
+	    android:fadingEdge="vertical"
+	    android:gravity="top"
+	    android:textSize="22sp"
+	    android:capitalize="sentences"
+	/>
+
+
+
+</LinearLayout>

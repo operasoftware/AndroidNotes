@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Synced Notes - link.opera.com </string>
+    <string name="no_notes">You have no notes</string>
+    <string name="menu_insert">Add Note</string>
+    <string name="menu_delete">Delete</string>
+    
+    <string name="body">Content</string>
+    <string name="confirm">Confirm</string>
+    <string name="edit_note">Edit Note</string>
+<string name="search_note">Find Note</string>
+<string name="menu_sync">Synchronize with Opera Notes</string>
+<string name="autoSync">Auto Synchronization</string>
+<string name="menu_sync_options">Preferences</string>
+<string name="got_notes"> new notes downloaded</string>
+
+<string name="sync_option">Sync Automatically</string>
+<string name="menu_revert">Revert changes</string>
+</resources>
