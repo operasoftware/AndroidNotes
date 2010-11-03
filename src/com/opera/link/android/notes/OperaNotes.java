@@ -323,6 +323,11 @@ public class OperaNotes extends ListActivity {
 
 		if (!isConnected) {
 			showToast("Authorization expired, you need to authorize the application again");
+			Editor prefEditor = pref.edit();
+			prefEditor.putString(REQUEST_TOKEN_PREF_KEY, null);
+			prefEditor.putString(ACCESS_TOKEN_PREF_KEY, null);
+			prefEditor.putString(TOKEN_SECRET_PREF_KEY, null);
+			prefEditor.commit();
 		}
 		if (!synced) {
 			showToast("There were some problems, not all changes submitted. Try again later");
