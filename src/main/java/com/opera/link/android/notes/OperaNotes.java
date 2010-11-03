@@ -41,13 +41,13 @@ import android.widget.ListView;
 import android.widget.Toast;
 import android.widget.AdapterView.AdapterContextMenuInfo;
 
-import com.opera.link.apilib.android.LinkClient;
-import com.opera.link.apilib.android.exceptions.LibOperaLinkException;
-import com.opera.link.apilib.android.exceptions.LinkAccessDeniedException;
-import com.opera.link.apilib.android.exceptions.LinkItemNotFound;
-import com.opera.link.apilib.android.items.Note;
-import com.opera.link.apilib.android.items.NoteFolder;
-import com.opera.link.apilib.android.items.NoteFolderEntry;
+import com.opera.link.apilib.LinkClient;
+import com.opera.link.apilib.exceptions.LibOperaLinkException;
+import com.opera.link.apilib.exceptions.LinkAccessDeniedException;
+import com.opera.link.apilib.exceptions.LinkItemNotFound;
+import com.opera.link.apilib.items.Note;
+import com.opera.link.apilib.items.NoteFolder;
+import com.opera.link.apilib.items.NoteFolderEntry;
 
 public class OperaNotes extends ListActivity {
 

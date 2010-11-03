@@ -28,7 +28,7 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.util.Log;
 
-import com.opera.link.apilib.android.items.Note;
+import com.opera.link.apilib.items.Note;
 
 /**
  * Simple notes database access helper class. Defines operations
