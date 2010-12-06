@@ -77,7 +77,7 @@ public class OperaNotes extends ListActivity {
 	private final static String REQUEST_TOKEN_PREF_KEY = "requestToken";
 	private final static String ACCESS_TOKEN_PREF_KEY = "accessToken";
 	private final static String TOKEN_SECRET_PREF_KEY = "tokenSecret";
-	private final static String CALLBACK_URL = "opera://notes";
+	private final static String CALLBACK_URL = "operaapi://operanotes";
 
 	private static final String SYNC_TAG = "SYNC";
 

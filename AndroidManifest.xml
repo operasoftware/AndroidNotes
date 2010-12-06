@@ -10,7 +10,7 @@
                 <action android:name="android.intent.action.VIEW" />
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE" />
-                <data android:scheme="operanotes" android:host="oauth_callback"/>
+                <data android:scheme="operaapi" android:host="operanotes"/>
             </intent-filter>
         </activity>
         <activity android:name=".NoteEdit"/>
