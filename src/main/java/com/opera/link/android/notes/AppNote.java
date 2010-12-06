@@ -2,7 +2,7 @@ package com.opera.link.android.notes;
 
 import java.util.Date;
 
-import com.opera.link.apilib.android.items.Note;
+import com.opera.link.apilib.items.Note;
 
 /**
  * Contains Opera Link data and informations about its status in the application

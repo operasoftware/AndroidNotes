@@ -5,10 +5,55 @@
 This is an very simple sample application to manage your Opera Link
 notes from your Android phone.
 
-Compilation dependencies
-========================
-To compile it you'll need the AndroidOperaLink library, available at
-http://github.com/operasoftware/androidoperalink
+Quick instructions for building and running
+===========================================
+
+For Ubuntu/Debian.
+
+1. Install Java and Maven
+$> sudo apt-get install sun-java6-jdk maven
+
+2. Download the Android SDK
+Download it from Google here http://developer.android.com/sdk/index.html
+Unpack it into /opt folder.
+
+Run the SDK and AVD manager program
+$> cd /opt/android-sdk-linux_x86/tools
+$> ./android &
+
+Use the UI to create an AVD called 'em21' and choose Android platform
+version 2.1 and the default options. A memory card of 64MB will be plenty.
+
+3. Set environment variables
+export JAVA_HOME=/usr/lib/jvm/java-6-sun
+export ADK_HOME=/opt/android-sdk-linux_x86/
+export PATH=$PATH:$JAVA_HOME/bin:$ADK_HOME:$ADK_HOME/tools
+export ANDROID_HOME=$ADK_HOME
+
+4. Grab the source code for the Opera Link Java Client and build it
+$> cd ~ && git clone git://github.com/operasoftware/JavaOperaLinkClient
+$> cd JavaOperaLinkClient
+$> mvn install
+
+After some whirring, the client library will be built and deployed to your
+local maven repository in the ~/.m2/repository folder
+
+5. Grab the source code the the AndroidNotes application and build it
+$> cd ~ && git clone git://github.com/operasoftware/AndroidNotes
+$> cd AndroidNotes
+$> mvn package
+
+Some whirring will happen, and the .apk file should be produced in the target/
+folder.
+
+6. Run it
+$> mvn android:emulator-start
+Be patient. It can take some time before the emulator boots to the home screen.
+When the emulator is fully booted.
+$> mvn android:deploy
+Will deploy the app. Open the phone's applications menu and launch the Android
+Notes app. On first run, you can click the "Menu" button and then choose 
+"Synchronize" to initiate the OAuth authentication process.  
 
 Known issues
 ============

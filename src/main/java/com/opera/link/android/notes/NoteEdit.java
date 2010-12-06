@@ -15,7 +15,7 @@ import android.view.MenuItem;
 import android.widget.EditText;
 import android.widget.TextView;
 
-import com.opera.link.apilib.android.items.Note;
+import com.opera.link.apilib.items.Note;
 
 public class NoteEdit extends Activity {
 
