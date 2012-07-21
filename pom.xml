@@ -87,9 +87,9 @@
 				<artifactId>maven-android-plugin</artifactId>
 				<version>2.6.0</version>
 				<configuration>
-					<sdk><platform>7</platform></sdk>
+					<sdk><platform>14</platform></sdk>
 					<emulator>
-						<avd>em21</avd>
+						<avd>em40</avd>
 					</emulator>
 					<deleteConflictingFiles>true</deleteConflictingFiles>
 					<undeployBeforeDeploy>true</undeployBeforeDeploy>

@@ -16,5 +16,5 @@
         <activity android:name=".NoteEdit"/>
     </application>
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-sdk android:targetSdkVersion="4" android:minSdkVersion="7"/>
+    <uses-sdk android:targetSdkVersion="4" android:minSdkVersion="14"/>
 </manifest>
